@@ -1,0 +1,14 @@
+:root {
+  font-weight: 400;
+  color: #F2F2F2;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(#121212,#113943);
+}

@@ -1,0 +1,157 @@
+*{
+  scroll-behavior: smooth;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Courier Prime', monospace;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #113943;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #4B8C9C;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+nav{
+  background-color: #113943;
+  height: 11vh;
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+#logo{
+  height: 45px;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.menu li {
+  list-style: none;
+  color: #F2F2F2;
+}
+
+.section-centro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 76vh;
+}
+
+.texto-centro{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  line-height: 0;
+  margin: 0 60px;
+}
+
+h1{
+  font-size: 45px;
+  text-decoration: underline;
+  text-decoration-color: #5E7FA0;
+}
+
+.seta img{
+  height: 40px;
+  animation: jumping 2s linear infinite;
+  cursor: pointer;
+}
+
+.seta{
+  height: 11vh;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.section-base{
+  height: 89vh;
+  padding: 0px 50px;
+}
+
+.sobre{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.texto-borda{
+  width: 460px;
+  border: 20px solid transparent;
+  border-image: url(img/borda-texto.svg) 30 stretch;
+  padding: 10px;
+}
+
+.texto-borda p{
+  text-align: justify;
+}
+
+strong{
+  color: #4B8C9C;
+}
+
+.formacao{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.variante-1{
+  width: 350px;
+  padding: 2px 20px;
+}
+
+.titulo{
+  display: flex;
+  justify-content: center;
+  height: 9vh;
+}
+
+.forma{
+  height: 80vh;
+  margin: 0 120px;
+}
+
+.contato{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0 120px;
+}
+
+.texto-contato{
+  width: 500px;
+}
+
+.redes img{
+  margin: 0 10px;
+}
+
+@keyframes jumping{
+  from {transform: translateY(-15px);}
+  50% {transform: translateY(0);}
+  to {transform: translateY(-15px);}
+}
